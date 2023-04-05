@@ -10,15 +10,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new UsersRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new UsersRequestBuilderGetQueryParameters();
+$queryParameters = UsersRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "startswith(displayName,'Eric')";
 $queryParameters->select = ["displayName","signInActivity"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->users()->get($requestConfiguration);
+$result = $graphServiceClient->users()->get($requestConfiguration);
 
 
 ```

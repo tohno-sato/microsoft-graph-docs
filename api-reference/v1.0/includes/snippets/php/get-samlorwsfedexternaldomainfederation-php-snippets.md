@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new IdentityProviderBaseRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new IdentityProviderBaseRequestBuilderGetQueryParameters();
+$queryParameters = IdentityProviderBaseRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "domains/any";
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->directory()->federationConfigurationsById('identityProviderBase-id')->get($requestConfiguration);
+$result = $graphServiceClient->directory()->federationConfigurationsById('identityProviderBase-id')->get($requestConfiguration);
 
 
 ```

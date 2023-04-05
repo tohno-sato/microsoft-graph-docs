@@ -14,7 +14,7 @@ $scope = new AccessReviewScope();
 $scope->set@odatatype('#microsoft.graph.principalResourceMembershipsScope');
 
 $additionalData = [
-'principalScopes' => $principalScopes1 = new ();
+		'principalScopes' => $principalScopes1 = new ();
 $		principalScopes1->set@odatatype('#microsoft.graph.accessReviewQueryScope');
 
 $		principalScopes1->setQuery('/v1.0/users');
@@ -35,7 +35,7 @@ $principalScopesArray []= $principalScopes2;
 $scope->setPrincipalScopes($principalScopesArray);
 
 
-'resourceScopes' => $resourceScopes1 = new ();
+	'resourceScopes' => $resourceScopes1 = new ();
 $	resourceScopes1->set@odatatype('#microsoft.graph.accessReviewQueryScope');
 
 $	resourceScopes1->setQuery('/beta/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3');
@@ -82,7 +82,7 @@ $requestBody->setFallbackReviewers($fallbackReviewersArray);
 
 
 
-$requestResult = $graphServiceClient->identityGovernance()->accessReviews()->definitionsById('accessReviewScheduleDefinition-id')->instancesById('accessReviewInstance-id')->patch($requestBody);
+$result = $graphServiceClient->identityGovernance()->accessReviews()->definitionsById('accessReviewScheduleDefinition-id')->instancesById('accessReviewInstance-id')->patch($requestBody);
 
 
 ```

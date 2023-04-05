@@ -10,14 +10,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new DeviceRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new DeviceRequestBuilderGetQueryParameters();
+$queryParameters = DeviceRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","extensionAttributes"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->devicesById('device-id')->get($requestConfiguration);
+$result = $graphServiceClient->devicesById('device-id')->get($requestConfiguration);
 
 
 ```

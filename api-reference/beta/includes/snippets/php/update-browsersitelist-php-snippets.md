@@ -16,7 +16,7 @@ $requestBody->setDescription('Production site list for team A');
 
 
 
-$requestResult = $graphServiceClient->admin()->edge()->internetExplorerMode()->siteListsById('browserSiteList-id')->patch($requestBody);
+$result = $graphServiceClient->admin()->edge()->internetExplorerMode()->siteListsById('browserSiteList-id')->patch($requestBody);
 
 
 ```

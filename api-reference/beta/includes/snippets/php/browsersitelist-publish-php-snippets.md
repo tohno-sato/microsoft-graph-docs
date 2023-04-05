@@ -14,7 +14,7 @@ $requestBody->setRevision('1.0');
 
 
 
-$requestResult = $graphServiceClient->admin()->edge()->internetExplorerMode()->siteListsById('browserSiteList-id')->publish()->post($requestBody);
+$result = $graphServiceClient->admin()->edge()->internetExplorerMode()->siteListsById('browserSiteList-id')->publish()->post($requestBody);
 
 
 ```

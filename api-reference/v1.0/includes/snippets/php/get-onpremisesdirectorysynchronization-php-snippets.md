@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 
-$requestResult = $graphServiceClient->directory()->onPremisesSynchronizationById('onPremisesDirectorySynchronization-id')->get();
+$result = $graphServiceClient->directory()->onPremisesSynchronizationById('onPremisesDirectorySynchronization-id')->get();
 
 
 ```
