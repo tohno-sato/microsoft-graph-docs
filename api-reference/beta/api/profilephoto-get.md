@@ -26,23 +26,17 @@ For example, if the user uploads a photo that is 504x504 pixels, all but the 648
 If the specified size is not available in the user's mailbox or in Azure Active Directory, the size 1x1 is returned with the rest of the  metadata.
 
 ## Permissions
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### To retrieve the profile photo of a contact
 
-|Permission type      | Least privileged permissions             | Higher privileged permissions             |
-|:--------------------|:-----------------------------------------|:------------------------------------------|
-|Delegated (work or school account)      |   Contacts.Read | Contacts.ReadWrite           |
-|Delegated (personal Microsoft account)      |   Contacts.Read | Contacts.ReadWrite            |
-|Application      |    Contacts.Read | Contacts.ReadWrite           |
+<!-- { "blockType": "permissions", "name": "profilephoto_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/profilephoto-get-permissions.md)]
 
 ### To retrieve the profile photo of a group
 
-|Permission type      | Least privileged permissions             | Higher privileged permissions             |
-|:--------------------|:-----------------------------------------|:------------------------------------------|
-|Delegated (work or school account)      |   Group.Read.All | Group.ReadWrite.All           |
-|Delegated (personal Microsoft account)      |   Not supported.            |  Not supported.            |
-|Application      |    Group.Read.All | Group.ReadWrite.All           |
+<!-- { "blockType": "permissions", "name": "profilephoto_get_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/profilephoto-get-2-permissions.md)]
 
 ### To retrieve the profile photo of a team
 

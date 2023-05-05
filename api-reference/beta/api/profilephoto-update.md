@@ -20,24 +20,18 @@ Only use PUT for this operation.
 > **Note**:  When updating the **user** photo, this operation first attempts to update the photo in Microsoft 365. If that fails (due to the user not having a mailbox), this API will attempt to update the photo in Azure Active Directory.
 
 ## Permissions
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
 ### To update the profile photo of a contact
 
-|Permission type      | Least privileged permissions             | Higher privileged permissions             |
-|:--------------------|:-----------------------------------------|:------------------------------------------|
-|Delegated (work or school account)      |   Contacts.ReadWrite           | Contacts.ReadWrite.Shared |
-|Delegated (personal Microsoft account)      |   Not supported.            | Not supported. |
-|Application      |    Contacts.ReadWrite           | Not supported. |
+<!-- { "blockType": "permissions", "name": "profilephoto_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/profilephoto-update-permissions.md)]
 
 ### To update the profile photo of a group
 
-|Permission type      | Least privileged permissions             | Higher privileged permissions             |
-|:--------------------|:-----------------------------------------|:------------------------------------------|
-|Delegated (work or school account)      |   Group.ReadWrite.All           | Not supported. |
-|Delegated (personal Microsoft account)      |   Not supported.            | Not supported. |
-|Application      |    Group.ReadWrite.All           | Not supported. |
+<!-- { "blockType": "permissions", "name": "profilephoto_update_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/profilephoto-update-2-permissions.md)]
 
 ### To update the profile photo of a team
 
@@ -49,11 +43,8 @@ The following tables show the least privileged permission or permissions require
 
 ### To update the profile photo of the signed-in user
 
-|Permission type      | Least privileged permissions             | Higher privileged permissions             |
-|:--------------------|:-----------------------------------------|:------------------------------------------|
-|Delegated (work or school account)      |   User.ReadWrite | User.ReadWrite.All           |
-|Delegated (personal Microsoft account)      |   Not supported.            | Not supported. |
-|Application      |    User.ReadWrite.All           | Not supported. |
+<!-- { "blockType": "permissions", "name": "profilephoto_update_4" } -->
+[!INCLUDE [permissions-table](../includes/permissions/profilephoto-update-4-permissions.md)]
 
 > [!NOTE]
 > - There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
